@@ -50,7 +50,7 @@ function sortCards(count){
 }
 
 function startBegin(){
-    let inputCount = parseInt(prompt("Escolha quantas cartas você quer jogar? \n Escolha um nº entre 4 e 14"));
+    let inputCount = parseInt(prompt("Escolha quantas cartas você quer jogar? \nEscolha um nº entre 4 e 14\nSó pode nº par."));
 
     while((inputCount % 2 !== 0) || (inputCount < 4) || (inputCount > 14)){
         inputCount = parseInt(prompt("Só pode um nº par entre 4 e 14. Com quantas cartas você deseja?"));

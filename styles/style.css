@@ -39,10 +39,19 @@ main{
     transform-style: preserve-3d;
     display: flex;
     align-items: center;
+    transition: all 200ms linear;
 }
+
+.cards li:hover{
+    cursor: pointer;
+    background-color: #7ab08e;
+    transform: translateY(-10px);
+}
+
 .cards img{
     width: 100%;
 }
+
 @media (max-width:540px){
     .cards li{
         margin-right: calc((100% - 120px) / 2);
