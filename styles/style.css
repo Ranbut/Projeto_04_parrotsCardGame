@@ -52,6 +52,17 @@ main{
     width: 100%;
 }
 
+.timer{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
+    color: #7ab08e;
+    background-color: #A7E9AF;
+    position: fixed;
+    top: 0%;
+    right: 0%;
+}
+
 @media (max-width:540px){
     .cards li{
         margin-right: calc((100% - 120px) / 2);

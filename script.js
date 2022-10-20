@@ -14,6 +14,8 @@ let cardsTurned = [];
 let finish = 0;
 let statusGame = 0;
 let selected = [];
+let time = 0;
+let interval;
 
 function createCards(count){
     sortCards(count);
@@ -63,6 +65,11 @@ function startBegin(){
     createCards(inputCount);
     statusGame = 0;
     finish = inputCount;
+
+    if(statusGame === 0){
+        clearInterval(interval);
+        interval = setInterval(incrementTime, 1000);
+    }
 }
 startBegin();
 
@@ -151,4 +158,18 @@ function turnAnimation(element,rotation,backgroundImg,display){
     img.style.display = display;
     element.style.transform = rotation;
     element.style.backgroundImage = backgroundImg;
+}
+
+function timer(time){
+    var aside = document.querySelector(".timer");
+
+    aside.innerText = time + "s";
+
+    var body = document.querySelector('body');
+    body.appendChild(aside);
+}
+
+function incrementTime(){
+    time++;
+    timer(time);
 }
