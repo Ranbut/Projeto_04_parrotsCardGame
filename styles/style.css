@@ -43,3 +43,9 @@ main{
 .cards img{
     width: 100%;
 }
+@media (max-width:540px){
+    .cards li{
+        margin-right: calc((100% - 120px) / 2);
+        margin-left: calc((100% - 120px) / 2);
+    }
+}

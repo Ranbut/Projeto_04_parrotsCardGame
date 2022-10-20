@@ -106,13 +106,11 @@ function clickCard(element){
 function secondCard(){
     let card1 = pickSrcImg(0);
     let card2 = pickSrcImg(1);
-    
-    let equal = isEqual(card1,card2);
 
-    if(equal === true){
+    if(card1 === card2){
         cardsTurned = [];
         countCorrect +=2;
-    }else if (equal === false){
+    }else if (card1 !== card2){
         setTimeout(function () {
             turnAnimation(cardsTurned[0],"rotateY(0deg)","url(assets/back.png)","none");
             turnAnimation(cardsTurned[1],"rotateY(0deg)","url(assets/back.png)","none");
@@ -146,13 +144,6 @@ function pickSrcImg(index){
     let card = cardsTurned[index].querySelector("img");
     let parrot = card.getAttribute("src");
     return parrot;
-}
-
-function isEqual(val1,val2){
-    if(val1 === val2)
-        return true;
-    else
-        return false;
 }
 
 function turnAnimation(element,rotation,backgroundImg,display){
