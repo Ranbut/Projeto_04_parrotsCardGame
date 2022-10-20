@@ -23,3 +23,23 @@ main{
     justify-content: space-between;
     align-items: stretch;
 }
+.cards li{
+    width: 120px;
+    height: 150px;
+    margin: 15px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background-color: #A7E9AF;
+    border: 1px solid #7ab08e;
+    background-image: url(../assets/back.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform .5s;
+    transform-style: preserve-3d;
+    display: flex;
+    align-items: center;
+}
+.cards img{
+    width: 100%;
+}
