@@ -82,7 +82,7 @@ function endGame(){
 }
 
 function restartGame(){
-    let input = prompt("Você deseja reiniciar o jogo?");
+    let input = prompt("Você deseja reiniciar o jogo? Digite (sim) em minúsculo.");
 
     while(input !== "sim"){
         input = prompt("Para reiniciar o jogo, digite (sim) em minúsculo");
