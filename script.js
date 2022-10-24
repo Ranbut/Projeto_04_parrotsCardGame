@@ -76,7 +76,7 @@ startBegin();
 function endGame(){
     statusGame = 1;
     setTimeout(function(){
-        alert("Você ganhou o jogo!");
+        alert("Você ganhou o jogo!\nVocê completou em: " + time + "s");
         restartGame();
     }, 500);
 }
