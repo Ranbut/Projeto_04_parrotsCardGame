@@ -76,7 +76,7 @@ startBegin();
 function endGame(){
     statusGame = 1;
     setTimeout(function(){
-        alert("Você ganhou o jogo!\nVocê completou em: " + time + "s");
+        alert("Você ganhou o jogo!\nVocê completou em: " + time + "s\nE com " + countPlay / 2 + " jogadas!");
         restartGame();
     }, 500);
 }
@@ -94,10 +94,10 @@ function restartGame(){
 
 function clickCard(element){
     cardsTurned.push(element);
+    countPlay++;
 
     if(cardsTurned.length < 3){
         turnAnimation(element,"rotateY(180deg)","none","initial");
-        countPlay++;
 
         if(cardsTurned.length === 2){
             secondCard();
