@@ -1,5 +1,4 @@
-# Projeto_04_parrotsCardGame
-Projeto n° 4 do curso de desenvolvimento fullstack da Driven 
+# Projeto 4 - Parrots Card Game
 
 # Descrição
 
